@@ -124,7 +124,7 @@ class FastTrackEnv(gym.Env):
 if __name__ == "__main__":
     print("Initializing Background Environment for Training...")
     train_env = FastTrackEnv()
-    model = PPO("MlpPolicy", train_env, verbose=1, learning_rate=0.0005)
+    model = PPO("MlpPolicy", train_env, verbose=2, learning_rate=0.0005)
     print("Training for 50,000 steps (This will take ~90 seconds)...")
     model.learn(total_timesteps=50000)
     print("Training Complete! Opening UI to test the agent...")
