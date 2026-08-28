@@ -6,24 +6,17 @@ import pygame
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import BaseCallback
 
-# ==========================================
-# 1. ENVIRONMENT CONFIGURATION
-# ==========================================
 MAX_SPEED = 20.0
 MAX_ACCEL = 10.0
 MAX_TURN = 1.0       
 DT = 0.1             
-
-# Circular Track Dimensions
 INNER_RADIUS = 30.0
 OUTER_RADIUS = 50.0
 LIDAR_ANGLES = [-math.pi/2, -math.pi/4, 0, math.pi/4, math.pi/2]
 LIDAR_MAX_RANGE = 50.0
 
 class FastTrackEnv(gym.Env):
-    """A minimal, high-speed kinematic RL racing environment with Pygame."""
     metadata = {"render_modes": ["human"]}
-    
     def __init__(self, render_mode=None):
         super(FastTrackEnv, self).__init__()
         self.render_mode = render_mode
