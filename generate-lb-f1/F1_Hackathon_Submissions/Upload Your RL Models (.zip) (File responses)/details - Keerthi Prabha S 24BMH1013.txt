@@ -1,0 +1,4 @@
+Participant: Keerthi
+Reg: 24BMH1013
+Model: k sainz
+Score: 117.5

@@ -1,0 +1,12 @@
+{
+    "participant_name": "Keerthi",
+    "registration_number": "24BMH1013",
+    "best_model": "k sainz",
+    "composite_score": 117.5,
+    "metrics": {
+        "completion_rate": "0%",
+        "avg_lap_time": "DNF",
+        "avg_top_speed": "20.0",
+        "steering_smoothness": "0.2848"
+    }
+}

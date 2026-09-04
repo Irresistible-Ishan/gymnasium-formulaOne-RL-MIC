@@ -1,0 +1,16 @@
+{
+    "model_name": "k sainz",
+    "reward_config": {
+        "w_time": -0.5,
+        "w_progress": 25,
+        "w_speed": 3.5,
+        "w_crash": -10,
+        "w_lap": 1000.0
+    },
+    "hyperparameters": {
+        "timesteps": 20000,
+        "learning_rate": 0.0003,
+        "gamma": 0.99,
+        "ent_coef": 0.005
+    }
+}
